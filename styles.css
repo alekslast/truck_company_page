@@ -1,0 +1,128 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    height: 60vh;
+}
+
+hr {
+    margin: 15px 350px 50px 350px;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.navbar-brand {
+    margin-right: 70px;
+}
+
+.even-sections {
+    background-color: azure;
+}
+
+li {
+    text-transform: capitalize;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------ZIG-ZAG SECTION------------------------------------ */
+.zig-zag-menu {
+    padding: 50px 50px;
+}
+
+.zig-zag-menu span {
+    font-size: 2rem;
+    font-family: 'Playfair Display';
+}
+
+h2 {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.zig-zag-text {
+    margin: auto 0;
+}
+
+.dispatch {
+    flex-direction: row-reverse;
+}
+
+.zz-pic {
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px 5px lightblue;
+    max-width: 40rem;
+}
+
+.highlight {
+    color: blue;
+}
+
+
+/* ------------------------------------/ZIG-ZAG SECTION------------------------------------ */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------------THE GRID---------------------------------------- */
+.grid-container {
+    display: grid;
+    /* height: auto;
+    width: auto; */
+
+    /* If you want your grid-items to be even squares and you wanna spread them across a section's width afterwords,
+       don't play with width and height nor try to provide fixed dimensions for grid-item.
+            - Use 'justify-content' to set horizontal alignment.
+              'Content' here means you're aligning items (blocks/squares) inside the grid => grid-items.
+            - Use 'align-items' to set vertical alignment.
+              'Items' here means you're aligning items inside grid-items (blocks/squares) => grid-items' content. */
+
+    gap: 20px 300px;
+    grid-template-columns: repeat(3, 15%); 
+    /* In order to make your pictures smaller, use 'grid-template-columns' and play with the size (%).
+       If you wanna spread grid's content across a section's width (so that it wouldn't be stuck in 
+       the center), just play with column-gap (it's the second property in the 'gap' shortcut). */
+
+    justify-content: center; /* Aligns grid items in the grid */
+    align-items: center;  /* Aligns the content inside of every grid item */
+
+}
+
+/* .grid-item {
+    height: 10rem;
+    width: 10rem;
+} */
+
+/* .grid-item-2 {
+    place-self: center center;
+} */
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------/THE GRID---------------------------------------- */
+
+
+
+
+.we-work-with {
+    padding: 100px 0;
+}
+
+.we-work-with img {
+    object-fit: cover;
+    width: 100%;
+}
