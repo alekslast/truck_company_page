@@ -1,3 +1,5 @@
+/* ----------------------------------------------------------------------------------------- */
+/* -------------------------------------------TAGS------------------------------------------ */
 a {
     color: #735E59;
     text-decoration: none;
@@ -5,6 +7,11 @@ a {
 
 a:hover {
     color: #735E59;
+}
+
+body {
+    color: #3E3F3D;
+    overflow-x: hidden;
 }
 
 h1, h3, .intro p {
@@ -17,13 +24,9 @@ h2 {
     font-size: 3.5rem;
 }
 
-ul {
-    list-style-type: none;
-}
-
 header {
     height: 100vh;
-    background-image: url(assets/navigation-systems-for-trucks.jpg);
+    background-image: url(assets/navigation-systems-for-trucks.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -51,9 +54,37 @@ li {
     text-transform: capitalize;
 }
 
+/* ul {
+    list-style-type: none;
+} */
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------------------------/TAGS------------------------------------------ */
 
 
 
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* ---------------------------------------CLASSES------------------------------------------- */
+.even-sections {
+    /* background-color: #B0C999; */
+    background-image: linear-gradient(135deg, white, #B0C999);
+}
+
+.center {
+    text-align: center;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* --------------------------------------/CLASSES------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* ---------------------------------------NAVIGATION---------------------------------------- */
 .navbar {
     background-color: white;
     transition: top 0.3s;
@@ -67,47 +98,29 @@ li {
 
 .navbar a {
     color: #735E59;
+    transition-duration: 0.4s;
 }
 
 .navbar a:hover {
-    color: #b3a197;
+    color: #AAE4E7;
 }
-
-.even-sections {
-    background-color: #ECEADA;
-}
+/* ----------------------------------------------------------------------------------------- */
+/* --------------------------------------/NAVIGATION---------------------------------------- */
 
 
 
 
 
-
-.form {
-    padding: 50px 100px 100px 100px;
-    /* margin-bottom; */
-}
-
-.form-btn {
-    margin-top: 40px;
-}
-
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------INTRO-------------------------------------------- */
 .intro {
     text-align: center;
-    /* margin-top: 20rem; */
-    /* padding-top: 20rem; */
 }
-
-
-
-.contact-us {
-    text-align: center;
-    margin: 50px 0 20px 0;
+.highlight {
+    color: #AAE4E7;
 }
-
-.contact-us p {
-    margin-top: 10px;
-}
-
+/* ----------------------------------------------------------------------------------------- */
+/* ---------------------------------------/INTRO-------------------------------------------- */
 
 
 
@@ -115,33 +128,6 @@ li {
 
 /* ---------------------------------------------------------------------------------------- */
 /* -------------------------------------ZIG-ZAG SECTION------------------------------------ */
-.zig-zag-menu {
-    padding: 50px 50px;
-}
-
-.zig-zag-menu span {
-    font-size: 2rem;
-    font-family: 'Playfair Display';
-}
-
-.zig-zag-text {
-    margin: auto 0;
-}
-
-.dispatch {
-    flex-direction: row-reverse;
-}
-
-.zz-pic {
-    border-radius: 5%;
-    box-shadow: 10px 10px 10px 5px #735E59;
-    max-width: 40rem;
-}
-
-.highlight {
-    color: blue;
-}
-
 
 /* ------------------------------------/ZIG-ZAG SECTION------------------------------------ */
 /* ---------------------------------------------------------------------------------------- */
@@ -153,7 +139,7 @@ li {
 
 /* ---------------------------------------------------------------------------------------- */
 /* ----------------------------------------THE GRID---------------------------------------- */
-.grid-container {
+.progs-grid-container {
     display: grid;
     /* height: auto;
     width: auto; */
@@ -165,8 +151,8 @@ li {
             - Use 'align-items' to set vertical alignment.
               'Items' here means you're aligning items inside grid-items (blocks/squares) => grid-items' content. */
 
-    gap: 20px 300px;
-    grid-template-columns: repeat(3, 15%); 
+    gap: 50px 20px;
+    grid-template-columns: repeat(6, 15%); 
     /* In order to make your pictures smaller, use 'grid-template-columns' and play with the size (%).
        If you wanna spread grid's content across a section's width (so that it wouldn't be stuck in 
        the center), just play with column-gap (it's the second property in the 'gap' shortcut). */
@@ -185,6 +171,12 @@ li {
     place-self: center center;
 } */
 
+.progs-grid-text {
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+}
+
 
 /* ----------------------------------------------------------------------------------------- */
 /* ----------------------------------------/THE GRID---------------------------------------- */
@@ -192,6 +184,9 @@ li {
 
 
 
+
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------WE WORK WITH------------------------------------- */
 .we-work-with {
     padding: 100px 0;
 }
@@ -199,4 +194,163 @@ li {
 .we-work-with img {
     object-fit: cover;
     width: 100%;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* ---------------------------------------/WE WORK WITH------------------------------------- */
+
+.numbers {
+    padding-top: 3.5rem;
+    background-color: #B0C999;
+    height: 15rem;
+}
+
+
+.why-us {
+    padding-top: 4rem;
+    height: 47rem;
+}
+
+.why-us h2 {
+    padding: 1rem 2rem 4rem;
+}
+
+.why-us-grid-item {
+    border: 2px solid #A89894;
+    background-color: #A89894;
+    padding: 0;
+}
+
+.why-us-grid-item img {
+    height: 15rem;
+    width: 100%;
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+/* -------------------------------------CONTACT US LINKS------------------------------------ */
+.contact-us {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.contact-us p {
+    margin-top: 10px;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* ------------------------------------/CONTACT US LINKS------------------------------------ */
+
+
+
+
+
+
+
+
+
+.who-we-are {
+    padding: 50px 260px 80px;
+}
+
+.who-we-are p {
+    margin-bottom: 80px;
+}
+
+.who-we-are-btn {
+    padding: 15px 49px;
+    background-color: #A89894;
+    color: #fff;
+    border: 1px solid #A89894;
+    transition-duration: 0.4s;
+}
+
+.who-we-are-btn:hover {
+    padding: 15px 49px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+.zig-zag-menu {
+    padding: 0;
+    padding-top: 50px;
+}
+
+.zig-zag-img {
+    width: 100%;
+    height: 20rem;
+}
+
+
+
+.col-4 {
+    padding: 0;
+}
+
+.zig-zag-text-section {
+    padding: 20px 25px 0;
+}
+
+.consultation {
+    padding: 120px;
+    padding-bottom: 80px;
+}
+
+.consultation h2, .consultation-text {
+    text-align: left;
+}
+
+.consultation h2 {
+    font-size: 3rem;
+}
+
+.contact-source {
+    padding-bottom: 30px;
+}
+
+.contact-source p {
+    padding-top: 15px;
+}
+
+.consultation-hr {
+    width: 450px;
+    margin: 35px 100px 50px 35px;
+}
+
+.consultation-left {
+    text-align: left;
+}
+
+.row {
+    width: 100%;
+}
+
+.zig-zag-row {
+    font-family: 'Exo 2';
+}
+
+.zig-zag-right {
+    padding-right: 0;
+    text-align: right;
+    margin: auto 0;
+}
+
+.zig-zag-left {
+    padding-left: 0;
+    text-align: left;
+    margin: auto 0;
+}
+
+.why-us-grid-item-text {
+    padding: 15px 15px 10px;
+}
+
+.why-us-grid-item-text p {
+    color: #fff;
+}
+
+.why-us h2 {
+    padding-bottom: 20px;
 }
